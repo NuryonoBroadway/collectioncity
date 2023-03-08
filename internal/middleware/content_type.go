@@ -2,13 +2,13 @@
 package middleware
 
 import (
+	"fmt"
 	"net/http"
 	"strings"
-	"fmt"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/consts"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/internal/consts"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
 )
 
 // ValidateContentType header

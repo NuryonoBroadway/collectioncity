@@ -4,9 +4,9 @@ package router
 import (
 	"net/http"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase/contract"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/routerkit"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/internal/ucase/contract"
+	"gitlab.privy.id/collection/collection-city/pkg/routerkit"
 )
 
 // httpHandlerFunc is a contract http handler for router

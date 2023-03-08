@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/entity"
-	"gitlab.privy.id/privypass/privypass-package-core/collection_core"
-	"gitlab.privy.id/privypass/privypass-package-core/request/meta"
+	"gitlab.privy.id/collection/collection-city/internal/entity"
+	"gitlab.privy.id/collection/collection-package-core/collection_core"
+	"gitlab.privy.id/collection/collection-package-core/request/meta"
 )
 
 func (prc *CollectionCore) CreateCollectionCityGrpc(ctx context.Context, city entity.City) error {

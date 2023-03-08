@@ -8,14 +8,14 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/consts"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/entity"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/provider/collection_core_provider"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase/contract"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/tracer"
-	"gitlab.privy.id/privypass/privypass-package-core/response/errbank"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/internal/consts"
+	"gitlab.privy.id/collection/collection-city/internal/entity"
+	"gitlab.privy.id/collection/collection-city/internal/provider/collection_core_provider"
+	"gitlab.privy.id/collection/collection-city/internal/ucase/contract"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/pkg/tracer"
+	"gitlab.privy.id/collection/collection-package-core/response/errbank"
 )
 
 type CreateCollectionBook struct {

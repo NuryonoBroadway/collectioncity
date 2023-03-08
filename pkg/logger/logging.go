@@ -2,12 +2,12 @@
 package logger
 
 import (
-	"fmt"
 	"context"
+	"fmt"
 
 	"github.com/sirupsen/logrus"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/util"
+	"gitlab.privy.id/collection/collection-city/pkg/util"
 )
 
 var (

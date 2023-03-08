@@ -4,9 +4,9 @@ package ucase
 import (
 	"testing"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/consts"
 	"github.com/stretchr/testify/assert"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/internal/consts"
 )
 
 func TestHealthCheck_Serve(t *testing.T) {

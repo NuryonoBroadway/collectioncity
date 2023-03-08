@@ -1,9 +1,9 @@
 package ucase
 
 import (
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/consts"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase/contract"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/internal/consts"
+	"gitlab.privy.id/collection/collection-city/internal/ucase/contract"
 )
 
 type healthCheck struct {

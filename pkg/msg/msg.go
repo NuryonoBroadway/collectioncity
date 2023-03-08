@@ -1,4 +1,4 @@
-//Package message
+// Package message
 // @author Daud Valentino
 package msg
 
@@ -8,26 +8,26 @@ import (
 	"strings"
 	"sync"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/file"
+	"gitlab.privy.id/collection/collection-city/pkg/file"
 )
 
 var msgs map[int]*Message
 var once sync.Once
 var mux sync.Mutex
 
-//MessageConfig as messages configuration
+// MessageConfig as messages configuration
 type MessageConfig struct {
 	Messages []*Message `yaml:"messages"`
 }
 
-//Message configuration structure
+// Message configuration structure
 type Message struct {
 	Code     int        `yaml:"code"`
 	Contents []*Content `yaml:"contents"`
 	contents map[string]*Content
 }
 
-//doMap create content map from slice
+// doMap create content map from slice
 func (m *Message) doMap() *Message {
 	m.contents = make(map[string]*Content, 0)
 	for _, c := range m.Contents {
@@ -40,16 +40,19 @@ func (m *Message) doMap() *Message {
 	return m
 }
 
-//Content message content configuration structure
+// Content message content configuration structure
 type Content struct {
 	Lang string `yaml:"lang"`
 	Text string `yaml:"text"`
 }
 
-//Setup initializes messages  from yaml file
-//args:
+// Setup initializes messages  from yaml file
+// args:
+//
 //	path: path of message list definition file
-//returns:
+//
+// returns:
+//
 //	err: operation error
 func Setup(fname string, paths ...string) (err error) {
 	var mcfg MessageConfig
@@ -78,7 +81,7 @@ func Setup(fname string, paths ...string) (err error) {
 	return
 }
 
-//Get messages by language
+// Get messages by language
 func Get(code int, lang string) (text string) {
 	lang = cleanLangStr(lang)
 	if m, ok := msgs[code]; ok {
@@ -90,7 +93,7 @@ func Get(code int, lang string) (text string) {
 	return
 }
 
-//GetCode messages by language
+// GetCode messages by language
 func GetCode(code int) int {
 	if m, ok := msgs[code]; ok {
 		return m.Code
@@ -98,7 +101,7 @@ func GetCode(code int) int {
 	return http.StatusUnprocessableEntity
 }
 
-//GetCode messages by language
+// GetCode messages by language
 func GetMessageCode(key int, lang string) (code int, text string) {
 	lang = cleanLangStr(lang)
 	if m, ok := msgs[key]; ok {

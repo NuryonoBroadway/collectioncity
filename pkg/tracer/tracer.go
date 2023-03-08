@@ -10,7 +10,7 @@ import (
 	otext "github.com/opentracing/opentracing-go/ext"
 	otlog "github.com/opentracing/opentracing-go/log"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/util"
+	"gitlab.privy.id/collection/collection-city/pkg/util"
 )
 
 type Option struct {

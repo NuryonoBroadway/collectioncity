@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
 )
 
 type consumerGroup struct {

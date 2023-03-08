@@ -4,9 +4,9 @@ package bootstrap
 import (
 	"fmt"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/helper"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/generator"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/internal/helper"
+	"gitlab.privy.id/collection/collection-city/pkg/generator"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
 )
 
 // RegistrySnowflake setup snowflake generator

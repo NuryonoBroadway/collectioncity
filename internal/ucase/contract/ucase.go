@@ -4,7 +4,7 @@ package contract
 import (
 	"context"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
 )
 
 // UseCase is a use case contract

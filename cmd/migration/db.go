@@ -4,9 +4,9 @@ package migration
 import (
 	"time"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/mariadb"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/pkg/mariadb"
 )
 
 func MigrateDatabase() {

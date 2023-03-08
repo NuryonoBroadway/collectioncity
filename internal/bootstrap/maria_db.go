@@ -4,10 +4,10 @@ package bootstrap
 import (
 	"time"
 
-	config "gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
+	config "gitlab.privy.id/collection/collection-city/internal/appctx"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/mariadb"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/pkg/mariadb"
 )
 
 // RegistryMariaDB initialize maria or mysql session

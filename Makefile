@@ -9,7 +9,7 @@ binary:
 
 clean:
 	@echo "cleaning ..."
-	@rm -f privypass-oauth2-core-se
+	@rm -f collection-city
 	@rm -rf vendor
 	@rm -f go.sum
 

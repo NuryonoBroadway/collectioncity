@@ -9,9 +9,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/cmd/http"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/cmd/migration"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/cmd/http"
+	"gitlab.privy.id/collection/collection-city/cmd/migration"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
 )
 
 // Start handler registering service command

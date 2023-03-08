@@ -4,15 +4,15 @@ package middleware
 import (
 	"bytes"
 	"encoding/json"
+	"fmt"
 	"io"
 	"io/ioutil"
 	"net/http"
-	"fmt"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/consts"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/hash"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/internal/consts"
+	"gitlab.privy.id/collection/collection-city/pkg/hash"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
 )
 
 // ValidateSignature header signature

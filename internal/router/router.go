@@ -7,23 +7,23 @@ import (
 	"net/http"
 	"runtime/debug"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/bootstrap"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/consts"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/handler"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/middleware"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/provider"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/provider/collection_core_provider"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/routerkit"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/internal/bootstrap"
+	"gitlab.privy.id/collection/collection-city/internal/consts"
+	"gitlab.privy.id/collection/collection-city/internal/handler"
+	"gitlab.privy.id/collection/collection-city/internal/middleware"
+	"gitlab.privy.id/collection/collection-city/internal/provider"
+	"gitlab.privy.id/collection/collection-city/internal/provider/collection_core_provider"
+	"gitlab.privy.id/collection/collection-city/internal/ucase"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/pkg/routerkit"
 
-	//"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/mariadb"
-	//"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/repositories"
-	//"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase/example"
+	//"gitlab.privy.id/collection/collection-city/pkg/mariadb"
+	//"gitlab.privy.id/collection/collection-city/internal/repositories"
+	//"gitlab.privy.id/collection/collection-city/internal/ucase/example"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase/collection_city_ucase"
-	ucaseContract "gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase/contract"
+	"gitlab.privy.id/collection/collection-city/internal/ucase/collection_city_ucase"
+	ucaseContract "gitlab.privy.id/collection/collection-city/internal/ucase/contract"
 )
 
 type router struct {

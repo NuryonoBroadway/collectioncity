@@ -6,7 +6,7 @@ import (
 
 	"github.com/brainlabs/snowflake"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
 )
 
 var (
@@ -33,5 +33,3 @@ func GenerateInt64() int64 {
 func GenerateString() string {
 	return snowFlakeGenerator.Generate().String()
 }
-
-

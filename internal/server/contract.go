@@ -5,8 +5,8 @@ import (
 	"context"
 	"net/http"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	ucase "gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase/contract"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	ucase "gitlab.privy.id/collection/collection-city/internal/ucase/contract"
 )
 
 // httpHandlerFunc abstraction for http handler

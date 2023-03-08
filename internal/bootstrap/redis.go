@@ -10,9 +10,9 @@ import (
 
 	"github.com/go-redis/redis/v8"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/cache"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/pkg/cache"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
 )
 
 const (

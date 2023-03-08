@@ -1,5 +1,5 @@
 {
-  "APP_NAME": "privypass-oauth2-core-se",
+  "APP_NAME": "collection-city",
   "APP_PORT": 8081,
   "APP_TIMEZONE": "Asia/Jakarta",
   "APP_DEBUG": false,
@@ -9,12 +9,12 @@
   "APP_KEY" : "",
   "APP_DEFAULT_LANG": "id",
 
-  "LOGGER_NAME": "privypass-oauth2-core-se",
+  "LOGGER_NAME": "collection-city",
   "LOGGER_LEVEL": "info",
 
   "APM_ADDRESS": "",
   "APM_ENABLE": false,
-  "APM_SERVICE_NAME": "privypass-oauth2-core-se",
+  "APM_SERVICE_NAME": "collection-city",
 
   "REDIS_HOST": "",
   "REDIS_DB": 0,

@@ -4,8 +4,8 @@ package appctx
 import (
 	"fmt"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/consts"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/file"
+	"gitlab.privy.id/collection/collection-city/internal/consts"
+	"gitlab.privy.id/collection/collection-city/pkg/file"
 )
 
 // NewConfig initialize config object

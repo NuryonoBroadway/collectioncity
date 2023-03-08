@@ -2,7 +2,7 @@
 package main
 
 import (
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/cmd"
+	"gitlab.privy.id/collection/collection-city/cmd"
 )
 
 func main() {

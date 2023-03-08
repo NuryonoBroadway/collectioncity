@@ -2,9 +2,9 @@
 package bootstrap
 
 import (
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/consts"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/msg"
+	"gitlab.privy.id/collection/collection-city/internal/consts"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/pkg/msg"
 )
 
 func RegistryMessage() {

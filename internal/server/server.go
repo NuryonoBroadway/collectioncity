@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"time"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/router"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/consts"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/internal/consts"
+	"gitlab.privy.id/collection/collection-city/internal/router"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
 )
 
 // NewHTTPServer creates http server instance
@@ -36,6 +36,7 @@ type httpServer struct {
 
 // Run runs the http server gracefully
 // returns:
+//
 //	err: error operation
 func (h *httpServer) Run(ctx context.Context) error {
 	var err error

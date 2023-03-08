@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
 )
 
 const (
@@ -142,4 +142,3 @@ func NewProducer(cfg *Config) Producer {
 
 	return m
 }
-

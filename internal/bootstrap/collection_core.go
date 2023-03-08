@@ -3,9 +3,9 @@ package bootstrap
 import (
 	"context"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
-	"gitlab.privy.id/privypass/privypass-package-core/collection_core"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"gitlab.privy.id/collection/collection-package-core/collection_core"
 )
 
 func RegistryCollectionCore(conf *appctx.Config) *collection_core.Client {

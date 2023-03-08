@@ -9,7 +9,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/util"
+	"gitlab.privy.id/collection/collection-city/pkg/util"
 )
 
 const (
@@ -120,7 +120,7 @@ func getCaller() *runtime.Frame {
 		minimumCallerDepth = knownLogrusFrames
 	})
 
-	lpkg := `gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger`
+	lpkg := `gitlab.privy.id/collection/collection-city/pkg/logger`
 
 	// Restrict the lookback frames to avoid runaway lookups
 	pcs := make([]uintptr, maximumCallerDepth)
@@ -155,4 +155,3 @@ func getPackageName(f string) string {
 
 	return f
 }
-

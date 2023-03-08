@@ -4,7 +4,7 @@ package appctx
 import (
 	"sync"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/msg"
+	"gitlab.privy.id/collection/collection-city/pkg/msg"
 )
 
 var rsp *Response

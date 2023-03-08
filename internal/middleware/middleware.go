@@ -4,8 +4,8 @@ package middleware
 import (
 	"net/http"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/consts"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/internal/consts"
 )
 
 // MiddlewareFunc is contract for middleware and must implement this type for http if need middleware http request
@@ -21,4 +21,3 @@ func FilterFunc(conf *appctx.Config, r *http.Request, mfs []MiddlewareFunc) int 
 
 	return consts.CodeSuccess
 }
-

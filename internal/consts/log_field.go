@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"gitlab.privy.id/privypass/privypass-package-core/response/errbank"
+	"gitlab.privy.id/collection/collection-package-core/response/errbank"
 )
 
 const (

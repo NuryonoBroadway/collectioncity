@@ -4,8 +4,8 @@ package bootstrap
 import (
 	"strings"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/kafka"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/pkg/kafka"
 )
 
 func RegistryKafkaConsumer(cfg *appctx.Config) kafka.Consumer {

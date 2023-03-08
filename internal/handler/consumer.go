@@ -4,10 +4,10 @@ package handler
 import (
 	"context"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/consts"
-	uContract "gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase/contract"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/awssqs"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/internal/consts"
+	uContract "gitlab.privy.id/collection/collection-city/internal/ucase/contract"
+	"gitlab.privy.id/collection/collection-city/pkg/awssqs"
 )
 
 // SQSConsumerHandler sqs consumer message processor handler

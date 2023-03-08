@@ -3,9 +3,9 @@ package collection_core_provider
 import (
 	"context"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/entity"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/provider"
-	"gitlab.privy.id/privypass/privypass-package-core/request/meta"
+	"gitlab.privy.id/collection/collection-city/internal/entity"
+	"gitlab.privy.id/collection/collection-city/internal/provider"
+	"gitlab.privy.id/collection/collection-package-core/request/meta"
 )
 
 type CollectionCoreProvider interface {

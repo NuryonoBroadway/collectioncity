@@ -12,7 +12,7 @@ import (
 
 	"github.com/gorilla/schema"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/consts"
+	"gitlab.privy.id/collection/collection-city/internal/consts"
 )
 
 // Data context for http use case
@@ -38,8 +38,11 @@ type ConsumerData struct {
 
 // Cast casts data based on servcice type
 // args:
+//
 //	target: object target holder
+//
 // returns:
+//
 //	error operation
 func (d *Data) Cast(target interface{}) error {
 

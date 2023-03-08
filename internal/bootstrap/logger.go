@@ -2,9 +2,9 @@
 package bootstrap
 
 import (
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/appctx"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/logger"
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/pkg/util"
+	"gitlab.privy.id/collection/collection-city/internal/appctx"
+	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"gitlab.privy.id/collection/collection-city/pkg/util"
 )
 
 func RegistryLogger(cfg *appctx.Config) {
@@ -15,4 +15,3 @@ func RegistryLogger(cfg *appctx.Config) {
 		ServiceName: cfg.Logger.Name,
 	})
 }
-

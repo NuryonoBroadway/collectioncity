@@ -1,4 +1,4 @@
-module gitlab.privy.id/privypass/privypass-oauth2-core-se
+module gitlab.privy.id/collection/collection-city
 
 go 1.17
 
