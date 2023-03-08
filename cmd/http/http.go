@@ -3,9 +3,9 @@ package http
 import (
 	"context"
 
-	"gitlab.privy.id/collection/collection-city/internal/consts"
-	"gitlab.privy.id/collection/collection-city/internal/server"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/internal/consts"
+	"collection-squad/collection/collection-city/internal/server"
+	"collection-squad/collection/collection-city/pkg/logger"
 )
 
 // Start function handler starting http listener

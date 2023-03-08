@@ -7,15 +7,16 @@ import (
 	"net/http"
 	"time"
 
+	"collection-squad/collection/collection-city/internal/appctx"
+	"collection-squad/collection/collection-city/internal/consts"
+	"collection-squad/collection/collection-city/internal/entity"
+	"collection-squad/collection/collection-city/internal/provider/collection_core_provider"
+	"collection-squad/collection/collection-city/internal/ucase/contract"
+	"collection-squad/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/pkg/tracer"
+
 	"github.com/google/uuid"
-	"gitlab.privy.id/collection/collection-city/internal/appctx"
-	"gitlab.privy.id/collection/collection-city/internal/consts"
-	"gitlab.privy.id/collection/collection-city/internal/entity"
-	"gitlab.privy.id/collection/collection-city/internal/provider/collection_core_provider"
-	"gitlab.privy.id/collection/collection-city/internal/ucase/contract"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
-	"gitlab.privy.id/collection/collection-city/pkg/tracer"
-	"gitlab.privy.id/collection/collection-package-core/response/errbank"
+	"gitlab.privy.id/privypass/privypass-package-core/response/errbank"
 )
 
 type CreateCollectionBook struct {

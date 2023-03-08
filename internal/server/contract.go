@@ -5,8 +5,8 @@ import (
 	"context"
 	"net/http"
 
-	"gitlab.privy.id/collection/collection-city/internal/appctx"
-	ucase "gitlab.privy.id/collection/collection-city/internal/ucase/contract"
+	"collection-squad/collection/collection-city/internal/appctx"
+	ucase "collection-squad/collection/collection-city/internal/ucase/contract"
 )
 
 // httpHandlerFunc abstraction for http handler

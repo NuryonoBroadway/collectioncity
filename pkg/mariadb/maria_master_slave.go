@@ -10,8 +10,8 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
 
-	"gitlab.privy.id/collection/collection-city/pkg/tracer"
-	"gitlab.privy.id/collection/collection-city/pkg/util"
+	"collection-squad/collection/collection-city/pkg/tracer"
+	"collection-squad/collection/collection-city/pkg/util"
 )
 
 type mariaMasterSlave struct {

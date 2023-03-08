@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"gitlab.privy.id/collection/collection-city/pkg/file"
+	"collection-squad/collection/collection-city/pkg/file"
 )
 
 var msgs map[int]*Message

@@ -7,7 +7,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"gitlab.privy.id/collection/collection-city/pkg/util"
+	"collection-squad/collection/collection-city/pkg/util"
 )
 
 var (

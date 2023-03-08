@@ -4,10 +4,10 @@ package handler
 import (
 	"context"
 
-	"gitlab.privy.id/collection/collection-city/internal/appctx"
-	"gitlab.privy.id/collection/collection-city/internal/consts"
-	uContract "gitlab.privy.id/collection/collection-city/internal/ucase/contract"
-	"gitlab.privy.id/collection/collection-city/pkg/awssqs"
+	"collection-squad/collection/collection-city/internal/appctx"
+	"collection-squad/collection/collection-city/internal/consts"
+	uContract "collection-squad/collection/collection-city/internal/ucase/contract"
+	"collection-squad/collection/collection-city/pkg/awssqs"
 )
 
 // SQSConsumerHandler sqs consumer message processor handler

@@ -2,9 +2,9 @@
 package bootstrap
 
 import (
-	"gitlab.privy.id/collection/collection-city/internal/appctx"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
-	"gitlab.privy.id/collection/collection-city/pkg/util"
+	"collection-squad/collection/collection-city/internal/appctx"
+	"collection-squad/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/pkg/util"
 )
 
 func RegistryLogger(cfg *appctx.Config) {

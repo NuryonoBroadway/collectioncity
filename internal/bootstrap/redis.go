@@ -10,9 +10,9 @@ import (
 
 	"github.com/go-redis/redis/v8"
 
-	"gitlab.privy.id/collection/collection-city/internal/appctx"
-	"gitlab.privy.id/collection/collection-city/pkg/cache"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/internal/appctx"
+	"collection-squad/collection/collection-city/pkg/cache"
+	"collection-squad/collection/collection-city/pkg/logger"
 )
 
 const (

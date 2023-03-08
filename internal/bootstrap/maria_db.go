@@ -4,10 +4,10 @@ package bootstrap
 import (
 	"time"
 
-	config "gitlab.privy.id/collection/collection-city/internal/appctx"
+	config "collection-squad/collection/collection-city/internal/appctx"
 
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
-	"gitlab.privy.id/collection/collection-city/pkg/mariadb"
+	"collection-squad/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/pkg/mariadb"
 )
 
 // RegistryMariaDB initialize maria or mysql session

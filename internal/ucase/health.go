@@ -1,9 +1,9 @@
 package ucase
 
 import (
-	"gitlab.privy.id/collection/collection-city/internal/appctx"
-	"gitlab.privy.id/collection/collection-city/internal/consts"
-	"gitlab.privy.id/collection/collection-city/internal/ucase/contract"
+	"collection-squad/collection/collection-city/internal/appctx"
+	"collection-squad/collection/collection-city/internal/consts"
+	"collection-squad/collection/collection-city/internal/ucase/contract"
 )
 
 type healthCheck struct {

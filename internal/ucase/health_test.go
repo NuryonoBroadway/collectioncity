@@ -4,9 +4,10 @@ package ucase
 import (
 	"testing"
 
+	"collection-squad/collection/collection-city/internal/appctx"
+	"collection-squad/collection/collection-city/internal/consts"
+
 	"github.com/stretchr/testify/assert"
-	"gitlab.privy.id/collection/collection-city/internal/appctx"
-	"gitlab.privy.id/collection/collection-city/internal/consts"
 )
 
 func TestHealthCheck_Serve(t *testing.T) {

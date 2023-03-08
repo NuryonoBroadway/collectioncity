@@ -4,8 +4,8 @@ package appctx
 import (
 	"fmt"
 
-	"gitlab.privy.id/collection/collection-city/internal/consts"
-	"gitlab.privy.id/collection/collection-city/pkg/file"
+	"collection-squad/collection/collection-city/internal/consts"
+	"collection-squad/collection/collection-city/pkg/file"
 )
 
 // NewConfig initialize config object

@@ -7,8 +7,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 
-	"gitlab.privy.id/collection/collection-city/internal/appctx"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/internal/appctx"
+	"collection-squad/collection/collection-city/pkg/logger"
 )
 
 // RegistryAWSSession initialize aws session

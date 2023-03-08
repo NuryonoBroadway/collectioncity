@@ -9,7 +9,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"gitlab.privy.id/collection/collection-city/pkg/util"
+	"collection-squad/collection/collection-city/pkg/util"
 )
 
 const (
@@ -120,7 +120,7 @@ func getCaller() *runtime.Frame {
 		minimumCallerDepth = knownLogrusFrames
 	})
 
-	lpkg := `gitlab.privy.id/collection/collection-city/pkg/logger`
+	lpkg := `collection-squad/collection/collection-city/pkg/logger`
 
 	// Restrict the lookback frames to avoid runaway lookups
 	pcs := make([]uintptr, maximumCallerDepth)

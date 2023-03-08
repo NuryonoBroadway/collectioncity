@@ -6,7 +6,7 @@ import (
 
 	"github.com/brainlabs/snowflake"
 
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/pkg/logger"
 )
 
 var (

@@ -5,13 +5,14 @@ import (
 	"fmt"
 	"net/http"
 
+	"collection-squad/collection/collection-city/internal/appctx"
+	"collection-squad/collection/collection-city/internal/provider/collection_core_provider"
+	"collection-squad/collection/collection-city/internal/ucase/contract"
+	"collection-squad/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/pkg/tracer"
+
 	"github.com/gorilla/mux"
-	"gitlab.privy.id/collection/collection-city/internal/appctx"
-	"gitlab.privy.id/collection/collection-city/internal/provider/collection_core_provider"
-	"gitlab.privy.id/collection/collection-city/internal/ucase/contract"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
-	"gitlab.privy.id/collection/collection-city/pkg/tracer"
-	"gitlab.privy.id/collection/collection-package-core/response/errbank"
+	"gitlab.privy.id/privypass/privypass-package-core/response/errbank"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

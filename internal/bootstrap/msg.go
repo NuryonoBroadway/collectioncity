@@ -2,9 +2,9 @@
 package bootstrap
 
 import (
-	"gitlab.privy.id/collection/collection-city/internal/consts"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
-	"gitlab.privy.id/collection/collection-city/pkg/msg"
+	"collection-squad/collection/collection-city/internal/consts"
+	"collection-squad/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/pkg/msg"
 )
 
 func RegistryMessage() {

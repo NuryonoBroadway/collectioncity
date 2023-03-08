@@ -13,7 +13,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	_ "github.com/ziutek/mymysql/godrv"
 
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/pkg/logger"
 )
 
 var (

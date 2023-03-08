@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"strings"
 
-	"gitlab.privy.id/collection/collection-city/internal/appctx"
-	"gitlab.privy.id/collection/collection-city/internal/consts"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/internal/appctx"
+	"collection-squad/collection/collection-city/internal/consts"
+	"collection-squad/collection/collection-city/pkg/logger"
 )
 
 // ValidateContentType header

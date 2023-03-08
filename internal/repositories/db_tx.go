@@ -6,8 +6,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"gitlab.privy.id/collection/collection-city/pkg/mariadb"
-	"gitlab.privy.id/collection/collection-city/pkg/tracer"
+	"collection-squad/collection/collection-city/pkg/mariadb"
+	"collection-squad/collection/collection-city/pkg/tracer"
 )
 
 type txDB struct {

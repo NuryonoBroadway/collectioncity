@@ -12,7 +12,7 @@ import (
 
 	"github.com/gorilla/schema"
 
-	"gitlab.privy.id/collection/collection-city/internal/consts"
+	"collection-squad/collection/collection-city/internal/consts"
 )
 
 // Data context for http use case

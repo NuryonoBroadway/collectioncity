@@ -2,7 +2,7 @@
 package main
 
 import (
-	"gitlab.privy.id/collection/collection-city/cmd"
+	"collection-squad/collection/collection-city/cmd"
 )
 
 func main() {

@@ -5,10 +5,10 @@ import (
 	"context"
 	"net/http"
 
-	"gitlab.privy.id/collection/collection-city/internal/appctx"
-	"gitlab.privy.id/collection/collection-city/internal/consts"
-	"gitlab.privy.id/collection/collection-city/internal/ucase/contract"
-	"gitlab.privy.id/collection/collection-city/pkg/msg"
+	"collection-squad/collection/collection-city/internal/appctx"
+	"collection-squad/collection/collection-city/internal/consts"
+	"collection-squad/collection/collection-city/internal/ucase/contract"
+	"collection-squad/collection/collection-city/pkg/msg"
 )
 
 // HttpRequest handler func wrapper

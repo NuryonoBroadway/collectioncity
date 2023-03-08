@@ -9,8 +9,9 @@ import (
 	"hash"
 	"io/ioutil"
 
+	"collection-squad/collection/collection-city/pkg/logger"
+
 	"github.com/xdg/scram"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
 )
 
 var SHA256 scram.HashGeneratorFcn = func() hash.Hash { return sha256.New() }

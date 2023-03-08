@@ -9,9 +9,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"gitlab.privy.id/collection/collection-city/cmd/http"
-	"gitlab.privy.id/collection/collection-city/cmd/migration"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/cmd/http"
+	"collection-squad/collection/collection-city/cmd/migration"
+	"collection-squad/collection/collection-city/pkg/logger"
 )
 
 // Start handler registering service command

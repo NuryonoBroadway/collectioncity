@@ -4,9 +4,9 @@ package bootstrap
 import (
 	"fmt"
 
-	"gitlab.privy.id/collection/collection-city/internal/helper"
-	"gitlab.privy.id/collection/collection-city/pkg/generator"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/internal/helper"
+	"collection-squad/collection/collection-city/pkg/generator"
+	"collection-squad/collection/collection-city/pkg/logger"
 )
 
 // RegistrySnowflake setup snowflake generator

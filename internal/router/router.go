@@ -7,23 +7,23 @@ import (
 	"net/http"
 	"runtime/debug"
 
-	"gitlab.privy.id/collection/collection-city/internal/appctx"
-	"gitlab.privy.id/collection/collection-city/internal/bootstrap"
-	"gitlab.privy.id/collection/collection-city/internal/consts"
-	"gitlab.privy.id/collection/collection-city/internal/handler"
-	"gitlab.privy.id/collection/collection-city/internal/middleware"
-	"gitlab.privy.id/collection/collection-city/internal/provider"
-	"gitlab.privy.id/collection/collection-city/internal/provider/collection_core_provider"
-	"gitlab.privy.id/collection/collection-city/internal/ucase"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
-	"gitlab.privy.id/collection/collection-city/pkg/routerkit"
+	"collection-squad/collection/collection-city/internal/appctx"
+	"collection-squad/collection/collection-city/internal/bootstrap"
+	"collection-squad/collection/collection-city/internal/consts"
+	"collection-squad/collection/collection-city/internal/handler"
+	"collection-squad/collection/collection-city/internal/middleware"
+	"collection-squad/collection/collection-city/internal/provider"
+	"collection-squad/collection/collection-city/internal/provider/collection_core_provider"
+	"collection-squad/collection/collection-city/internal/ucase"
+	"collection-squad/collection/collection-city/pkg/logger"
+	"collection-squad/collection/collection-city/pkg/routerkit"
 
-	//"gitlab.privy.id/collection/collection-city/pkg/mariadb"
-	//"gitlab.privy.id/collection/collection-city/internal/repositories"
-	//"gitlab.privy.id/collection/collection-city/internal/ucase/example"
+	//"collection-squad/collection/collection-city/pkg/mariadb"
+	//"collection-squad/collection/collection-city/internal/repositories"
+	//"collection-squad/collection/collection-city/internal/ucase/example"
 
-	"gitlab.privy.id/collection/collection-city/internal/ucase/collection_city_ucase"
-	ucaseContract "gitlab.privy.id/collection/collection-city/internal/ucase/contract"
+	"collection-squad/collection/collection-city/internal/ucase/collection_city_ucase"
+	ucaseContract "collection-squad/collection/collection-city/internal/ucase/contract"
 )
 
 type router struct {

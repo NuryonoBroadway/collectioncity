@@ -1,4 +1,4 @@
-module gitlab.privy.id/collection/collection-city
+module collection-squad/collection/collection-city
 
 go 1.17
 

@@ -9,7 +9,7 @@ import (
 
 	"github.com/spf13/cast"
 
-	"gitlab.privy.id/collection/collection-city/pkg/util"
+	"collection-squad/collection/collection-city/pkg/util"
 )
 
 // GetHostname  get machine hostname

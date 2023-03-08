@@ -11,8 +11,9 @@ import (
 	"syscall"
 	"time"
 
+	"collection-squad/collection/collection-city/pkg/logger"
+
 	"github.com/Shopify/sarama"
-	"gitlab.privy.id/collection/collection-city/pkg/logger"
 )
 
 type consumerGroup struct {

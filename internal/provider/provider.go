@@ -1,6 +1,6 @@
 package provider
 
-import "gitlab.privy.id/collection/collection-package-core/collection_core"
+import "gitlab.privy.id/privypass/privypass-package-core/collection_core"
 
 type Provider struct {
 	CollectionCore *collection_core.Client

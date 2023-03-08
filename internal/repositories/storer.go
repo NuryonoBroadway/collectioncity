@@ -1,6 +1,6 @@
 package repositories
 
-import "gitlab.privy.id/collection/collection-city/pkg/mariadb"
+import "collection-squad/collection/collection-city/pkg/mariadb"
 
 type storer struct {
 	dbTx mariadb.Transaction
