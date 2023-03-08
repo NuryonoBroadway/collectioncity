@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cellular-effect-306806",
+  "private_key_id": "afdfaa2f69e4176c6f4a92c345f48af26003727c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCkYQ7aXuY4E63T\nF2DGz48/EIhbudcntude7TYrjSdaJGTJkmeUGxrWZPuOD5KLqrPDwdO3h1rxL9Jj\nVtl2YVmkhEk6BvPHKLUhohK3377MlDrB7r5m/yZzMS7o34oAweGsEPYyVcxQv1D4\nfSIpMvIT7vtl7bLlQDtTY28+BReLOM9pLUEyWo7iphG0IDMwT2RX53dKj2YEJjuR\nWpP6IlbZkud4k1F3+VVvRM10MDJQuqwhhWirXkeyQda8tddavKxX6qC7R/Vq+lei\neG5peZun6/9idaXjpjXyBb9bPFflcyXGnwR5STEKHn6/KRVBTxAcHGdX0O8v1o0W\nbdGF5XIFAgMBAAECggEAKQ7LKHUyuMgFj2fT9uSqKXzmKk8ZdCSF1xqWALvRm/zi\nJc0JTR+WDP4NLTcrifI504gK61kGOJ8SxFhRmfWH8AVQywsogdLjp0J1vXLIFA5k\nPMN20IAjqPscdfM746OJzDIyZHE0xuh6f4615SeB+sOjDJsaJ5PrHZGFHC8madIA\ntYGNUlyvs7eocpqgEklhMWHrYjTl5uDtnmbMsDFYyV1S8cLWOmHR9CqVZxHyHvOI\n/hGH0zhTLLN2lgR/CbSAGM28KsUKJ5YObPv8BJTEsClod9xbQWU3kc8sbWxWxC8T\ncZDlyCMutAelOD7gwCBG23uQHejThd59VPP66IMQcwKBgQDXpq6XKRKznj1xYTh0\n7BpavKNphjX4ml+7mMfAc3kRNIqWLoGRtv9JnsXrxMEOQfeVZCTAY8jcAVILPhcS\nDDgeyfn2gdlXKaNOqJBFuTY6sj+HBwT6w7lrXbZvCMPVSn30cLUJWiY5MHaO5PeC\nQtaVsIZ5DAPSE/ptg+4mHGZb7wKBgQDDIolhJxyVNOutWs8+A4CSzUzwt0NV+Vu1\nyXJ51l8w8X8y/N0h4FT1EWVvpPthEP74iB5/t2Qm80JFCDuenvKfSL2oyRZWjpex\nk/FqxvlhHf04IdBQVFjHL298qiFOFvfrcYLeXnt2iYJiWJHQ0HXx6Z7N6JLcLl5E\nQQn3TLitSwKBgQCMXgBSf/eeVqejvyZiZLQaz6KGM0e6E7GwiBetGvx4yHxUmNzZ\nngW5Q9GMTztiLmobIV4SpGC/Y1Sl4LpfkviMgedkHsz7QSz9LBcMayvzNMbI+zaw\niumMCymOSGQ/1wb5LsuH1NgAbZ0eEcdRUHQgZxCAheOOwFZHJpLC18WAnQKBgGN4\nt49O4MMutvUn1X1HS8OJ5C7RPQIWmymQB0sUfHH2qWDUheU+9g/3Tj4bXAmfIFqR\nCPsSAXvZhW6rQ7kYTZXk/smLuFdnWOys/ePwii93mh2DHy3T0W24QJzMHS4xhy/+\nLTgt8cH7VvvLKonHulgXP1y3siWLfYJNpUbrVTkBAoGAf4u9w1mS3L+QadtaMl4r\nJE1NuHxenLlrcuwlUcbV8EeFMoJwG7Zm8xxT4ksp1nTWsQ5n5z73N8n/qg/gTVGq\nrlRa7ndk7NjzIOqVHYRi1jPEdbwiBI3PptMt5tpfQLb9+0PtDZ6Xe/LcuDtqfTZ2\nxtIsafRiNFhKJpqdCPeRoOg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "pubusub-test@cellular-effect-306806.iam.gserviceaccount.com",
+  "client_id": "104255638376287249476",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubusub-test%40cellular-effect-306806.iam.gserviceaccount.com"
+}

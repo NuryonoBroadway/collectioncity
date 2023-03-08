@@ -1,0 +1,54 @@
+app:
+  name: "Collection Book"
+  port: 9090
+  grpc_port: "0.0.0.0:8585"
+  timezone: ${APP_TIMEZONE}
+  debug: ${APP_DEBUG}
+  env: ${APP_ENV} # dev | stg | prod
+  read_timeout_second: ${APP_READ_TIMEOUT_SECOND}
+  write_timeout_second: ${APP_WRITE_TIMEOUT_SECOND}
+  key: "${APP_KEY}"
+  default_lang: "${APP_DEFAULT_LANG}"
+
+logger:
+  name: "${LOGGER_NAME}" # service name
+  level: "${LOGGER_LEVEL}" # trace | debug | info | warn | error | fatal | panic
+
+apm:
+  address: "${APM_ADDRESS}"
+  enable: ${APM_ENABLE}
+  name: ${APM_NAME}
+
+
+redis:
+  host: ${REDIS_HOST}
+  db: ${REDIS_DB}
+  password: ${REDIS_PASSWORD}
+  read_timeout_second: ${REDIS_READ_TIMEOUT_SECOND}
+  write_timeout_second: ${REDIS_WRITE_TIMEOUT_SECOND}
+  pool_size: ${REDIS_POOL_SIZE}
+  pool_timeout_second: ${REDIS_POOL_TIMEOUT_SECOND}
+  min_idle_conn: ${REDIS_MIN_IDLE}
+  idle_timeout_second: ${REDIS_IDLE_TIMEOUT_SECOND}
+  route_by_latency: ${REDIS_ROUTE_BY_LATENCY}
+  idle_frequency_check: ${REDIS_IDLE_FREQUENCY_CHECK}
+  read_only: ${REDIS_READ_ONLY}
+  route_randomly: ${REDIS_ROUTE_RANDOMLY}
+  max_redirect: ${REDIS_MAX_REDIRECT}
+  cluster_mode: ${REDIS_CLUSTER_MODE}
+  tls_enable: ${REDIS_TLS_ENABLE}
+  insecure_skip_verify: ${REDIS_INSECURE_SKIP_VERIFY} # if tls_enable == true, this config use for tls insecure_skip_verify true or false
+
+pubsub:
+  account_path: "/home/karakuzen/repo/collection-book-hash-signing-se/config/cfg/cellular-effect-306806-afdfaa2f69e4.json"
+  project_id: "your-project-id"
+  project_name: "your-project-name"
+  topic: "your-topic" # topic
+  subscription_topic: "your-subscription-topic" # subscription topic
+
+firestore:
+  account_path: "/home/karakuzen/repo/collection-book-hash-signing-se/config/cfg/privyfellowship-6a4e1-firebase-adminsdk-g0c2d-66e133ed37.json"
+  project_id: "your_project_id"
+  project_name: "${FIRESTORE_PROJECT_NAME}"
+  root_collection_id: "your-root-collection"
+  root_document_id: "your-root-document"
