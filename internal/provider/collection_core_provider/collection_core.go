@@ -11,13 +11,8 @@ import (
 )
 
 func (prc *CollectionCore) CreateCollectionCityGrpc(ctx context.Context, city entity.City) error {
-	var new_query = prc.Provider.CollectionCore.NewQuery()
-	var query = new_query.Col("cities").Doc(city.ID)
-
-	defer func() {
-		new_query.Close()
-		query.Close()
-	}()
+	var query = prc.Provider.CollectionCore.NewQuery().Col("cities").Doc(city.ID)
+	defer query.Close()
 
 	_, err := query.Set(ctx, city, collection_core.IsMergeAll, collection_core.IsUseGRPC)
 	if err != nil {
@@ -28,13 +23,8 @@ func (prc *CollectionCore) CreateCollectionCityGrpc(ctx context.Context, city en
 }
 
 func (prc *CollectionCore) CreateCollectionCityPubsub(ctx context.Context, city entity.City) error {
-	var new_query = prc.Provider.CollectionCore.NewQuery()
-	var query = new_query.Col("cities").Doc(city.ID)
-
-	defer func() {
-		new_query.Close()
-		query.Close()
-	}()
+	var query = prc.Provider.CollectionCore.NewQuery().Col("cities").Doc(city.ID)
+	defer query.Close()
 
 	_, err := query.Set(ctx, city, collection_core.IsMergeAll, collection_core.IsUsePubSub)
 	if err != nil {
@@ -45,14 +35,10 @@ func (prc *CollectionCore) CreateCollectionCityPubsub(ctx context.Context, city 
 }
 
 func (prc *CollectionCore) GetCollectionCityAll(ctx context.Context, m meta.Metadata) ([]entity.City, *meta.Metadata, error) {
-	var new_query = prc.Provider.CollectionCore.NewQuery()
-	var query = new_query.Col("cities").Limit(m.PerPage).Page(m.Page)
-	var result = make([]entity.City, 0)
+	var query = prc.Provider.CollectionCore.NewQuery().Col("cities").Limit(m.PerPage).Page(m.Page)
+	defer query.Close()
 
-	defer func() {
-		new_query.Close()
-		query.Close()
-	}()
+	var result = make([]entity.City, 0)
 
 	switch m.OrderType {
 	case meta.SortAscending:
@@ -73,14 +59,10 @@ func (prc *CollectionCore) GetCollectionCityAll(ctx context.Context, m meta.Meta
 }
 
 func (prc *CollectionCore) GetCollectionCityByDocumentID(ctx context.Context, documentID string) (*entity.City, error) {
-	var new_query = prc.Provider.CollectionCore.NewQuery()
-	var query = new_query.Col("cities").Doc(documentID)
-	var result entity.City
+	var query = prc.Provider.CollectionCore.NewQuery().Col("cities").Doc(documentID)
+	defer query.Close()
 
-	defer func() {
-		new_query.Close()
-		query.Close()
-	}()
+	var result entity.City
 
 	inf, err := query.Retrive(ctx, &result)
 	if err != nil {
