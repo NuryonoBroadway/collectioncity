@@ -1,4 +1,4 @@
-package collection_book_ucase
+package collection_city_ucase
 
 import (
 	"errors"

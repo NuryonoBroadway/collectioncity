@@ -13,6 +13,11 @@ func (prc *CollectionCore) CreateCollectionCityGrpc(ctx context.Context, city en
 	var new_query = prc.Provider.CollectionCore.NewQuery()
 	var query = new_query.Col("cities").Doc(city.ID)
 
+	defer func() {
+		new_query.Close()
+		query.Close()
+	}()
+
 	_, err := query.Set(ctx, city, collection_core.IsMergeAll, collection_core.IsUseGRPC)
 	if err != nil {
 		return err
@@ -25,6 +30,11 @@ func (prc *CollectionCore) CreateCollectionCityPubsub(ctx context.Context, city 
 	var new_query = prc.Provider.CollectionCore.NewQuery()
 	var query = new_query.Col("cities").Doc(city.ID)
 
+	defer func() {
+		new_query.Close()
+		query.Close()
+	}()
+
 	_, err := query.Set(ctx, city, collection_core.IsMergeAll, collection_core.IsUsePubSub)
 	if err != nil {
 		return err
@@ -35,26 +45,22 @@ func (prc *CollectionCore) CreateCollectionCityPubsub(ctx context.Context, city 
 
 func (prc *CollectionCore) GetCollectionCityAll(ctx context.Context, m meta.Metadata) ([]entity.City, *meta.Metadata, error) {
 	var new_query = prc.Provider.CollectionCore.NewQuery()
-	var query = new_query.Col("cities")
-	var query_ref collection_core.QueryRef
+	var query = new_query.Col("cities").Limit(m.PerPage).Page(m.Page)
 	var result = make([]entity.City, 0)
+
+	defer func() {
+		new_query.Close()
+		query.Close()
+	}()
 
 	switch m.OrderType {
 	case meta.SortAscending:
-		query_ref = query.OrderBy(m.OrderBy, collection_core.ASC)
+		query = query.OrderBy(m.OrderBy, collection_core.ASC)
 	case meta.SortDescending:
-		query_ref = query.OrderBy(m.OrderBy, collection_core.DESC)
+		query = query.OrderBy(m.OrderBy, collection_core.DESC)
 	}
 
-	if m.Page != 0 {
-		query_ref = query_ref.Page(m.Page)
-	}
-
-	if m.PerPage != 0 {
-		query_ref = query_ref.Limit(m.PerPage)
-	}
-
-	inf, err := query_ref.Retrive(ctx, &result)
+	inf, err := query.Retrive(ctx, &result)
 	if err != nil {
 		return nil, nil, err
 	}
@@ -69,6 +75,11 @@ func (prc *CollectionCore) GetCollectionCityByDocumentID(ctx context.Context, do
 	var new_query = prc.Provider.CollectionCore.NewQuery()
 	var query = new_query.Col("cities").Doc(documentID)
 	var result entity.City
+
+	defer func() {
+		new_query.Close()
+		query.Close()
+	}()
 
 	inf, err := query.Retrive(ctx, &result)
 	if err != nil {

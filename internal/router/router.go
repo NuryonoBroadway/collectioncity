@@ -22,7 +22,7 @@ import (
 	//"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/repositories"
 	//"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase/example"
 
-	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase/collection_book_ucase"
+	"gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase/collection_city_ucase"
 	ucaseContract "gitlab.privy.id/privypass/privypass-oauth2-core-se/internal/ucase/contract"
 )
 
@@ -150,17 +150,17 @@ func (rtr *router) Route() *routerkit.Router {
 	collection_book := root.PathPrefix("/").Subrouter()
 	collection_book.HandleFunc("/v1/internal/collection/book", rtr.handle(
 		handler.HttpRequest,
-		collection_book_ucase.NewCreateCollectionBook(collection_core_provider),
+		collection_city_ucase.NewCreateCollectionBook(collection_core_provider),
 	)).Methods(http.MethodPost)
 
 	collection_book.HandleFunc("/v1/internal/collection/book/all", rtr.handle(
 		handler.HttpRequest,
-		collection_book_ucase.NewGetCollectionBook(collection_core_provider),
+		collection_city_ucase.NewGetCollectionBook(collection_core_provider),
 	)).Methods(http.MethodGet)
 
 	collection_book.HandleFunc("/v1/internal/collection/book/detail/{document_id}", rtr.handle(
 		handler.HttpRequest,
-		collection_book_ucase.NewGetDetailCollectionBook(collection_core_provider),
+		collection_city_ucase.NewGetDetailCollectionBook(collection_core_provider),
 	)).Methods(http.MethodGet)
 
 	return rtr.router
